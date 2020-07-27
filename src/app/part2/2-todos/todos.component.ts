@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TodoService } from './todo.service';
 
 @Component({
+    //providers: [TodoService],
     selector: 'app-todos',
     templateUrl: './todos.component.html',
     styleUrls: ['./todos.component.css']
@@ -14,7 +15,10 @@ export class TodosComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.service.getTodos().subscribe(t => this.todos = t);
+        //this.service.getTodos().subscribe(t => this.todos = t);
+        this.service.getTodosPromise().then(t =>{
+                      this.todos = t;
+        });
     }
 
     add() {

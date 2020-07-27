@@ -108,5 +108,8 @@
       }
     }
   },
-  "defaultProject": "testing-demo"
+  "defaultProject": "testing-demo",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { of } from 'rxjs/internal/observable/of';
 import { empty } from 'rxjs/internal/Observer';
 
-// extra test file for 100% coverage (not part of the course)
+
 describe('TodoService', () => {
     let service: TodoService;
     let http: HttpClient;

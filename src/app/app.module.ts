@@ -14,6 +14,7 @@ import { UsersComponent } from './part2/users/users.component';
 import { RouterModule } from '@angular/router';
 import { HighlightDirective } from './part2/highlight.directive';
 import { NavComponent } from './nav/nav.component';
+import { TodoService } from './part2/2-todos/todo.service';
 
 @NgModule({
     declarations: [
@@ -32,7 +33,7 @@ import { NavComponent } from './nav/nav.component';
         FormsModule,
         HttpClientModule
     ],
-    providers: [],
+    providers: [TodoService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
